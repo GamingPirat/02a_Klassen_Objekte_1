@@ -10,18 +10,23 @@ public class App {
         //cat --> Referenzvariable
         // --> Referenztyp(Klasse)
       Cat cat = new Cat();
-      System.out.println("Blick von aussen: " + cat); 
+      output("Blick von aussen: " + cat); 
       cat.tellYourAddress(); // Methodenaufruf
 
       System.out.println("-------------------------------------------");
 
       Cat cat2 = new Cat();
-      System.out.println("Blick von aussen: " + cat2);
+      output("Blick von aussen: " + cat2);
       cat2.tellYourAddress();
 
     }
+//  // Statische Methode, die in der Klasse ausgeführt wird ...
+   public static void output(String outputStr){
+    System.out.println(outputStr);
 
-   
+   }
+
+
 
 }
 
