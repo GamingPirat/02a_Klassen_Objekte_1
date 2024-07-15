@@ -9,8 +9,16 @@ public class App {
 
         //cat --> Referenzvariable
         // --> Referenztyp(Klasse)
-      Cat cat = new Cat(); 
-      System.out.println(cat); 
+      Cat cat = new Cat();
+      System.out.println("Blick von aussen: " + cat); 
+      cat.tellYourAddress(); // Methodenaufruf
+
+      System.out.println("-------------------------------------------");
+
+      Cat cat2 = new Cat();
+      System.out.println("Blick von aussen: " + cat2);
+      cat2.tellYourAddress();
+
     }
 
    
